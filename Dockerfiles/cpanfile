@@ -1,2 +1,1 @@
  requires 'Capture::Tiny';
- requires 'Term::ReadLine::Gnu Term::ReadLine::Perl Term::ReadKey';
