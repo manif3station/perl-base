@@ -2,11 +2,8 @@
 
 use strict;
 use warnings;
-use Capture::Tiny qw(capture);
 
-my @dirs = split /\n/, capture {
-    system qw(find /app/src/plugins -type d -name Dockerfiles);
-};
+my @dirs = split /\n/, qx(find /app/src/plugins -type d -name Dockerfiles);
 
 foreach my $dir (@dirs) {
     my $installer = "$dir/installer.sh";
