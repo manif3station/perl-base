@@ -6,7 +6,7 @@ COPY . /app
 
 WORKDIR /app
 
-RUN perl src/plugins/perl-base/scripts/installer.pl
+RUN perl /app/src/plugins/perl-base/Dockerfiles/installer.pl
 
 ENV HOME /app
 
