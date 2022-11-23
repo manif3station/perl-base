@@ -12,5 +12,6 @@ foreach my $dir (@dirs) {
     my $installer = "$dir/installer.sh";
     next if !-f $installer;
     print "Install $installer ...\n";
+    chdir $dir;
     system bash => $installer;
 }
