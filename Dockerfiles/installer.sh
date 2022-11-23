@@ -1,4 +1,4 @@
-cd /app/src/plugins/perl-base
+cd /app/src/plugins/perl-base/Dockerfiles
 
 apt-get update
 
@@ -10,10 +10,9 @@ apt-get install -y apt-utils software-properties-common build-essential \
 
 ## Basic Perl Module to start with
 HOME=/tmp/setup cpanm --notest --installdeps .
-
 rm -fr /tmp/setup
 
 ## Applications to be run
-cp Dockerfiles/service.pl /usr/local/bin/process
+cp service.pl /usr/local/bin/process
 
 chmod 0755 -R /usr/local/bin/process
