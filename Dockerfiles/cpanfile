@@ -1,11 +1,2 @@
- requires 'Archive::Tar::Wrapper';
- requires 'Authen::SASL::Cyrus
  requires 'Capture::Tiny';
- requires 'Carton';
- requires 'Dist::Zilla';
- requires 'Dist::Zilla::Plugin::Prereqs::FromCPANfile';
- requires 'Dist::Zilla::Plugin::ReadmeMarkdownFromPod';
- requires 'File::Slurp';
- requires 'LWP::Protocol::https';
- requires 'Net::SSLeay';
  requires 'Term::ReadLine::Gnu Term::ReadLine::Perl Term::ReadKey';
