@@ -9,8 +9,8 @@ apt-get install -y apt-utils software-properties-common build-essential \
                    libsasl2-dev libmagic-dev
 
 ## Basic Perl Module to start with
-HOME=/tmp/setup cpanm --notest --installdeps .
-rm -fr /tmp/setup
+HOME=/tmp cpanm --notest --installdeps .
+rm -fr /tmp
 
 ## Applications to be run
 cp service.pl /usr/local/bin/process
